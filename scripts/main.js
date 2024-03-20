@@ -43,7 +43,6 @@ readQuote("tuesday");        //calling the function
 function writeHikes() {
     //define a variable for the collection you want to create in Firestore to populate data
     var hikesRef = db.collection("hikes");
-
     hikesRef.add({
         code: "BBY01",
         name: "Burnaby Lake Park Trail", //replace with your own city?
@@ -83,6 +82,8 @@ function writeHikes() {
         lng: -122.94092543551031,
         last_updated: firebase.firestore.Timestamp.fromDate(new Date("January 1, 2023"))
     });
+
+ 
 }
 
 //------------------------------------------------------------------------------
